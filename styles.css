@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #e5e2e2;
+    --clr-dark: #12031d;
+    --clr-accent: #ebb903;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -25,7 +25,7 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
-
+/* 
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -33,7 +33,7 @@
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
-}
+} */
 
 /* General styles */
 
@@ -64,7 +64,7 @@ img {
 strong { font-weight: var(--fw-bold) }
 
 :focus {
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid var(--clr-light);
     outline-offset: 3px;
 }
 
@@ -74,7 +74,7 @@ strong { font-weight: var(--fw-bold) }
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -147,8 +147,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -205,7 +205,7 @@ header {
 }
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
+    transform: rotate(180deg) translateX(-6px);
 }
 
 .nav-open .hamburger::after {
@@ -225,7 +225,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -247,12 +247,18 @@ header {
 
 /*  Intro section  */
 
+
+
+
 .intro {
     position: relative;
 }
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 100%;
+    min-width: 150px; /* Adjust the minimum width of the image */
+    max-width: 100%; 
 }
 
 .section__subtitle--intro {
@@ -295,7 +301,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    /* background-image: url(../img/services-bg.jpg); */
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -310,11 +316,11 @@ header {
 .section__title--services::after {
     content: '';
     display: block;
-    width: 2em;
-    height: 1px;
+    width: 3em;
+    height: 2px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
+    background: var(--clr-dark);
+    opacity: 0.5;
 }
 
 .services {
@@ -339,18 +345,22 @@ header {
     }
 }
 
+
+    
+
 .columns {
     display: flex;
   }
   
   .column {
-    flex: 1;
-    padding: 0 10px;
+    flex: 2;
+    /* padding: 0 20px; */
   }
   
   .bullet-points {
+    font-size: 20px; /* Adjust the font size as needed */
     margin: 0;
-    padding-left: 20px; /* Adjust spacing as needed */
+    padding-left: 25px; /* Adjust spacing as needed */
   }
   
   .bullet {
@@ -364,11 +374,7 @@ header {
     margin: 0 auto;
 }
 
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -377,7 +383,7 @@ header {
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
-    }
+    } */
     
     .section__title--about {
         grid-area: title;
@@ -403,8 +409,8 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;    
 }
 
@@ -414,7 +420,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
@@ -439,10 +445,10 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-accent);
+    background: #13387a;
+    color: var(--clr-light);
     text-align: center;
-    padding: 2.5em 0;
+    /* padding: 2.5em 0; */
     font-size: var(--fs-h3);
 
 }
@@ -453,7 +459,7 @@ header {
 }
 
 .footer__link {
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-absolute);
 }
 
 .footer__link:hover,
