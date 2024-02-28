@@ -347,26 +347,17 @@ header {
     margin: 0 auto;
 }
 
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
+.section__title--about {
+    text-align: center; /* Center the title */
+    margin-bottom: 1em; /* Add space below the title */
+}
+
+.about-me__img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    display: block; /* Ensure the image displays properly */
+    margin: 0 auto 1em; /* Center the image and add space below it */
+}
+
 }
 
 /* My Work */
