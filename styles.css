@@ -345,6 +345,8 @@ header {
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+    display: flex; /* Change from grid to flex */
+    flex-direction: column; /* Stack items vertically */
 }
 
 .section__title--about {
@@ -353,6 +355,7 @@ header {
 }
 
 .about-me__img {
+    box-shadow: var(--bs);
     max-width: 100%; /* Ensure the image doesn't overflow */
     display: block; /* Ensure the image displays properly */
     margin: 0 auto 1em; /* Center the image and add space below it */
