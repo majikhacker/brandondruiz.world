@@ -7,15 +7,15 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Source Sans Pro', monospace;
     --ff-secondary: 'Source Code Pro', monospace;
     
     --fw-reg: 300;
     --fw-bold: 800;
     
-    --clr-light: #fff;
+    --clr-light: #cac8c6;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #dc970e;
     
     --fs-h1: 2.5rem;
     --fs-h2: 2.0rem;
@@ -373,6 +373,11 @@ header {
     
     .section__title--about {
         grid-area: title;
+        background-image: url(/images/bckrnd.png);
+        background-size: cover;
+        background-blend-mode: soft-light;
+        color: var(--clr-light);
+        text-align: center;
     }
     
     .section__subtitle--about {
