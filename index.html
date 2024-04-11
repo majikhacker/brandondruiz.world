@@ -1,67 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brandon D. Ruiz's World</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Patua+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Patua+One&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="index.css">
-        <title>Brandon D Ruiz</title>
+    
     </head>
     <body>
-      <header>  
-        <div class="logo">
-            <img src="images/dev-bdruiz.png" alt="">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li> 
-            </ul>
-        </nav>
-      </header>
-
-      <!--Introduction-->
-      <section class="intro" id="home">
-        <h1 class="section__title  section__title--intro">
-            <strong>Brandon Ruiz</strong>
-        </h1>
-        <p class="section__subtitle  section__subtitle--intro">Frontend Developer</p>
-        <img src="images/bruiz.png" alt="a picture of Brandon Ruiz smiling" class="intro_img">
-      </section>
-
-      <!--My Services-->
-      <section class="my-services" id="services">
-        <h2 class="section__title  section__title--services">What I do</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Design & Development</h3>
-                <p>Skilled in creating interactive chatbots using OpenAI's api. Experience building websites with html, css and js. Also experienced deploying and maintaining websites and apps using Git, MySql and AWS. Proficient in developing Streamlit applications for data science and machine learning projects, leveraging data visualization and interactive features.
+        <header>
+            <div class="logo">
+                <a href="mailto:info@brandondruiz.world"><img  src="images/dev-bdruiz.png" alt=""></a>
             </div>
-            <div class="service">
-                <h3>Network Knowledge</h3>
-                <p>I have a solid understanding of network theory, having delved into concepts like Software Defined Networking and Network Function Virtualization. I've skillfully assembled both small physical networks and larger virtual networks using virtualization software like Packet Tracer. My hands-on experience bridges theory and practice, allowing me to design and manage communication networks effectively
-            </div>
-            <div class="service">
-                <h3>Continuos Learner</h3>
-                <p>Continuous Learning: Driven by curiosity and a passion for technology, committed to staying abreast of current trends and emerging technologies, pursuing ongoing education in relevant fields.
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <!-- Introduction -->
+        <section class="intro" id="home" style="background-image: url('images/bckrnd-light.jpg'); background-repeat: no-repeat;
+        background-size: cover;" class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Brandon D Ruiz</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Frontend Developer</p>
+            <img src="images/bruiz.png" alt="a picture of brandon ruiz smiling" class="intro__img">
+        </section>
+                      
+        <!-- My services -->
+        <section   style="background-image: url('images/coding.png')"; class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design & Development</h3>
+                    <p>Skilled in creating interactive chatbots using OpenAI's api. Experience building websites with html, css and js. Also experienced deploying and maintaining websites and apps using Git, MySql and AWS. Proficient in developing Streamlit applications for data science and machine learning projects, leveraging data visualization and interactive features.
+                    <p>
+                </div> <!-- / service -->
+                <div class="service">
+                    <h3>Network Knowledge</h3>
+                    <p>I have a solid understanding of network theory, having delved into concepts like Software Defined Networking and Network Function Virtualization. I've skillfully assembled both small physical networks and larger virtual networks using virtualization software like Packet Tracer. My hands-on experience bridges theory and practice, allowing me to design and manage communication networks effectively
+                    </p>
+                </div> <!-- / service -->
+                <div class="service">
+                    <h3>Continuous Learner</h3>
+                    <p>Continuous Learning: Driven by curiosity and a passion for technology, committed to staying abreast of current trends and emerging technologies, pursuing ongoing education in relevant fields.
                     Fundamental Skills: Experience in foundational programming languages such as Python, HTML, CSS, and JavaScript, with exposure to shell scripting, virtualization, network structures and cloud computing
-                </p>
-            </div>
-        </div>
-       
-        <a href="#work" class="btn">My Work</a>
-      </section>
-
-      <!--About Me-->
-      <section class="about-me" id="about" >
-        <h2 class="section__title section__title--about">Who I am</h2>
+                    </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+                        
+            <a href="#work" class="btn">My Work</a>
+        </section>
+            
+        <!-- About me -->
+        <section style="background-image: url('images/bckrnd-light.jpg'); background-repeat: no-repeat;
+        background-size: cover;" class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
             <p class="section__subtitle section__subtitle--about">Front End developer and IT Expert based out of Arizona</p>
                        
             <div class="about-me__body">
@@ -70,11 +80,12 @@
             </div>
                        
             <img src=".png" alt="Brandon Ruiz" class="about-me__img">
-      </section>
-
-      <!--My Work-->
-      <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My work</h2>
+        </section>
+                    
+        <!-- My Work -->
+        <section style="background-image: url('images/bckrnd-drk.png'); background-repeat: no-repeat;
+        background-size: cover;" class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
                         
             <div class="portfolio">
@@ -96,34 +107,40 @@
             <!-- Portfolio item 04 -->
                 <a href="portfolio-item.html" class="portfolio__item">
                      <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
-            </div>                 
-      </section>
-      
-      <!-- Footer -->
-      <footer  class="footer">
-        <a href="mailto:info@brandondruiz.world" class="footer__link">info@brandondruiz.world</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/majikhacker">
-                <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/brandon-ruiz-580580277/">
-                <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://codepen.io">
-                <i class="fab fa-codepen"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
+                </a>                        
+                            
+                            
 
-    <script src="index.js"></script>
-            
-               
+            </div>
+        </section>
+                    
+                    
+        <!-- Footer -->
+        <footer style="background-image: url('images/bckrnd-light.jpg'); background-repeat: no-repeat;
+        background-size: cover;" class="footer">
+            <a href="mailto:info@brandondruiz.world" class="footer__link">info@brandondruiz.world</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/majikhacker">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/brandon-ruiz-580580277/">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="index.js"></script>
+             
     </body>
 </html>
+            
+      
